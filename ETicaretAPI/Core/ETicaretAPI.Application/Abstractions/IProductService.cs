@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ETicaretAPI.Application.Abstractions
 {
-    public interface  IProductService
+    public interface IProductService
     {
         List<Product> GetProducts();
     }

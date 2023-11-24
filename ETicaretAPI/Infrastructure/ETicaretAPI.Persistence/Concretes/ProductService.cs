@@ -11,9 +11,10 @@ namespace ETicaretAPI.Persistence.Concretes
     public class ProductService : IProductService
     {
         public List<Product> GetProducts()
-        => new()
-        {
-            new(){Id=Guid.NewGuid(),Name="Product 1", Price=100, Stock=50}
-        };
+            =>new() 
+            {
+                new(){Id=Guid.NewGuid(), Name="Product 1", Stock=50,Price=100}
+            };
+        
     }
 }
