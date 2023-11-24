@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "DDi5TXOPMe6uM9fo5eYADZKlCvcUudck7xcmXNiXWVTJaKugyu1AhxlkwJ9q8ym3EzQ9ocPAly81U/wYHAVzPg==",
+  "dgSpecHash": "+iZ+bQnhTLd7mafj2ptq2H50+scscJMeIB+FvbAM6AaeTd6gKq6hwmeUJxxSTMJD/s38JojAm4sRTqV/rffF4Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\abdul\\Masaüstü\\git\\MiniETicaret\\ETicaretAPI\\Infrastructure\\ETicaretAPI.Persistence\\ETicaretAPI.Persistence.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\abdul\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
