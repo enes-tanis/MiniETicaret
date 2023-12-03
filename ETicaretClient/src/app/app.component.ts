@@ -5,6 +5,7 @@ import {
   ToastrMessageType,
   ToastrPosition,
 } from './services/ui/custom-toastr.service';
+import { NgxSpinnerService } from 'ngx-spinner';
 declare var $: any;
 @Component({
   selector: 'app-root',
@@ -12,10 +13,5 @@ declare var $: any;
   styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  constructor(private toastr: CustomToastrService) {
-    this.toastr.message('Hello world', 'title', {
-      messageType: ToastrMessageType.Success,
-      position: ToastrPosition.TopRight,
-    });
-  }
+  constructor() {}
 }
