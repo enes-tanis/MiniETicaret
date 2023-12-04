@@ -15,3 +15,7 @@ declare var $: any;
 export class AppComponent {
   constructor() {}
 }
+
+$.get('https://localhost:7116/api/products', (data) => {
+  console.log(data);
+});

@@ -15,21 +15,22 @@ namespace ETicaretAPI.API.Controllers
         private readonly IOrderWriteRepository _orderWriteRepository;
         private readonly ICustomerWriteRepository _customerWriteRepository;
         private readonly IOrderReadRepository _orderReadRepository;
+        private readonly ICustomerReadRepository _customerReadRepository;
 
-        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository, IOrderWriteRepository orderWriteRepository, ICustomerWriteRepository customerWriteRepository, IOrderReadRepository orderReadRepository)
+
+        public ProductsController(IProductReadRepository productReadRepository, IProductWriteRepository productWriteRepository, IOrderWriteRepository orderWriteRepository, ICustomerWriteRepository customerWriteRepository, IOrderReadRepository orderReadRepository, ICustomerReadRepository customerReadRepository)
         {
             _productReadRepository = productReadRepository;
             _productWriteRepository = productWriteRepository;
             _orderWriteRepository = orderWriteRepository;
             _customerWriteRepository = customerWriteRepository;
             _orderReadRepository = orderReadRepository;
+            _customerReadRepository = customerReadRepository;
         }
         [HttpGet]
-        public async Task Get()
+        public IActionResult Get()
         {
-            Order order = await _orderReadRepository.GetByIdAsync("50f6be47-3a96-458c-91d6-b773391c430c");
-            order.Address = "İstanbul";
-            await _orderWriteRepository.SaveAsync();
+            return Ok("Merhaba");
         }
         
     }
